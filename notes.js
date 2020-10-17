@@ -5,3 +5,4 @@ const addNotes = (note) => {
 };
 const getNotes = () => 'Your  notes...';
 module.exports = addNotes;
+undefined;
