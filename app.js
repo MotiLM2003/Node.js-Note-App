@@ -2,10 +2,10 @@ const chalk = require('chalk');
 const yargs = require('yargs');
 
 // custom modules
-const addNote = require('./notes');
+const notes = require('./notes');
 const parsing = require('./yargs');
 
-console.log(yargs.argv);
+yargs.parse();
 
 // Create add command
 

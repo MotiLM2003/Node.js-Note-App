@@ -2,6 +2,8 @@ const yargs = require('yargs');
 const chalk = require('chalk');
 const fs = require('fs');
 
+const notes = require('./notes');
+
 // changing yargs version ?
 yargs.version('1.2.0');
 
@@ -22,7 +24,7 @@ yargs.command({
     },
   },
   handler: ({ title, body }) => {
-    fs.appendFileSync('notes.txt', `\nTitle ${title} - Body: ${body}`);
+    notes.addNote(title, body);
   },
 });
 
